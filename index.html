@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <header class="d-flex justify-content-between">
+          <h1 class="text-muted">Your cart</h1>
+          <h1 class="text-muted"><span class="badge badge-secondary badge-pill">3</span></h1>
+        </header>
+        <table class="table table-bordered">
+          <tr>
+            <td>
+              <div class="d-flex justify-content-between">
+                <p class="font-weight-bold mb-0">Product name</p>
+                <p class="mb-0 text-muted">$12</p>
+              </div>
+              <p class="mb-0 text-muted">Brief description</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex justify-content-between">
+                <p class="font-weight-bold mb-0">Second product</p>
+                <p class="mb-0 text-muted">$8</p>
+              </div>
+              <p class="mb-0 text-muted">Brief description</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex justify-content-between">
+                <p class="font-weight-bold mb-0">Third item</p>
+                <p class="mb-0 text-muted">$5</p>
+              </div>
+              <p class="mb-0 text-muted">Brief description</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex justify-content-between">
+                <p class="font-weight-bold mb-0 text-success">Promo code</p>
+                <p class="mb-0 text-success">-$5</p>
+              </div>
+              <p class="mb-0 text-success">EXAMPLECODE</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex justify-content-between">
+                <p class="font-weight-bold mb-0 text-muted">Total (USD)</p>
+                <p class="mb-0 font-weight-bold">$20</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <table class="table table-bordered">
+          <tr>
+            <td class="pb-0">
+              <form>
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control rounded-left mb-0" id="promo__code" placeholder="promo code"
+                    aria-describedby="emailHelp">
+                  <button type="submit" class="btn btn-secondary rounded-right mb-0">Redeem</button>
+                </div>
+              </form>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
