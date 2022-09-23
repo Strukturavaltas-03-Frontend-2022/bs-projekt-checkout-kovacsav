@@ -12,9 +12,9 @@
 
 <body>
   <div class="container bg-light">
-    <div class="row">
-      <div class="col-sm-12">
-        <header class="d-flex justify-content-between">
+    <div class="row d-flex flex-row-reverse">
+      <div class="col-sm-4 px-3">
+        <header class="d-flex justify-content-between mt-4">
           <h1 class="text-muted">Your cart</h1>
           <h1 class="text-muted"><span class="badge badge-secondary badge-pill">3</span></h1>
         </header>
@@ -77,146 +77,154 @@
             </td>
           </tr>
         </table>
+      </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <header class="">
-            <h1 class="">Billing address</h1>
-          </header>
-          <form>
-            <div class="form-group">
-              <label for="firstNameFormControlInput">First name</label>
-              <input type="text" class="form-control" id="firstNameFormControlInput">
-            </div>
-            <div class="form-group">
-              <label for="lastNameFormControlInput">Last name</label>
-              <input type="text" class="form-control" id="lastNameFormControlInput">
-            </div>
+      <div class="col-sm-8 px-3">
+        <header class="">
+          <h1 class="mt-4">Billing address</h1>
+        </header>
+        <form>
+          <div class="form-group">
+            <label for="firstNameFormControlInput">First name</label>
+            <input type="text" class="form-control" id="firstNameFormControlInput">
+          </div>
+          <div class="form-group">
+            <label for="lastNameFormControlInput">Last name</label>
+            <input type="text" class="form-control" id="lastNameFormControlInput">
+          </div>
 
-            <div class="form-group">
-              <label for="userNameFormControlInput">Username</label>
+          <div class="form-group">
+            <label for="userNameFormControlInput">Username</label>
+            <div class="input-group">
               <div class="input-group-prepend">
-                <div class="input-group">
-                  <div class="input-group-text">@</div>
-                  <input type="text" class="form-control" id="userNameFormControlInput" placeholder="Username">
-                </div>
+                <div class="input-group-text">@</div>
               </div>
+              <input type="text" class="form-control" id="userNameFormControlInput" placeholder="Username">
             </div>
+          </div>
 
-            <div class="form-group">
-              <label for="emailFormControlInput">Email (Optional)</label>
-              <input type="email" class="form-control" id="emailFormControlInput" placeholder="you@example.com">
-            </div>
-            <div class="form-group">
-              <label for="addressFormControlInput">Address</label>
-              <input type="text" class="form-control" id="addressFormControlInput" placeholder="1234 Main St">
-            </div>
-            <div class="form-group">
-              <label for="addressFormControlInput2">Address 2 (Optional)</label>
-              <input type="text" class="form-control" id="addressFormControlInput2" placeholder="Apartment or suite">
-            </div>
-            <div class="form-group">
-              <label for="countryFormControlSelect">Country</label>
-              <select class="form-control custom-select" id="countryFormControlSelect">
-                <option selected>Choose...</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
+          <div class="form-group">
+            <label for="emailFormControlInput">Email (Optional)</label>
+            <input type="email" class="form-control" id="emailFormControlInput" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="addressFormControlInput">Address</label>
+            <input type="text" class="form-control" id="addressFormControlInput" placeholder="1234 Main St">
+          </div>
+          <div class="form-group">
+            <label for="addressFormControlInput2">Address 2 (Optional)</label>
+            <input type="text" class="form-control" id="addressFormControlInput2" placeholder="Apartment or suite">
+          </div>
+          <div class="form-group">
+            <label for="countryFormControlSelect">Country</label>
+            <select class="form-control custom-select" id="countryFormControlSelect">
+              <option selected>Choose...</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
 
-            <div class="form-group">
-              <label for="stateFormControlSelect">State</label>
-              <select class="form-control custom-select" id="stateFormControlSelect">
-                <option selected>Choose...</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="zipFormControlInput">Zip</label>
-              <input type="text" class="form-control" id="addressFormControlInput">
-            </div>
-          </form>
-        </div>
-
-        <div class="col-sm-12">
-          <table class="table border-top border-bottom">
-            <tr>
-              <td>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="check1">
-                  <label class="form-check-label" for="check1">
-                    Shipping address is the same my billing address
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="check2">
-                  <label class="form-check-label" for="check2">
-                    Save this information for next time
-                  </label>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4 border-bottom">
-          <header class="">
-            <h1 class="">Payment</h1>
-          </header>
-          <form>
-            <div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                  checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  Credit card
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                <label class="form-check-label" for="exampleRadios1">
-                  Debit card
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                <label class="form-check-label" for="exampleRadios1">
-                  Paypal
-                </label>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="nameOnCardFormControlInput">Name on card</label>
-              <input type="text" class="form-control" id="nameOnCardFormControlInput">
-              <p class="mb-0 text-muted">Full name as displayed on card</p>
-            </div>
-            <div class="form-group">
-              <label for="cardNumberFormControlInput">Credit card number</label>
-              <input type="text" class="form-control" id="cardNumberFormControlInput">
-            </div>
-
-            <div class="form-group">
-              <label for="expirationFormControlInput">Expiration</label>
-              <input type="text" class="form-control" id="expirationFormControlInput">
-            </div>
-
-            <div class="form-group">
-              <label for="cvvFormControlInput">CVV</label>
-              <input type="text" class="form-control" id="cvvFormControlInput">
-            </div>
-
-          </form>
-        </div>
-
+          <div class="form-group">
+            <label for="stateFormControlSelect">State</label>
+            <select class="form-control custom-select" id="stateFormControlSelect">
+              <option selected>Choose...</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="zipFormControlInput">Zip</label>
+            <input type="text" class="form-control" id="addressFormControlInput">
+          </div>
+        </form>
       </div>
     </div>
+
+    <div class="row justify-content-start">
+      <div class="col-sm-8 px-3">
+        <table class="table border-top border-bottom">
+          <tr>
+            <td>
+              <div class="form-check mt-2 px-2">
+                <input class="form-check-input" type="checkbox" value="" id="check1">
+                <label class="form-check-label" for="check1">
+                  Shipping address is the same my billing address
+                </label>
+              </div>
+              <div class="form-check mb-3 px-2">
+                <input class="form-check-input" type="checkbox" value="" id="check2">
+                <label class="form-check-label" for="check2">
+                  Save this information for next time
+                </label>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="row justify-content-start">
+      <div class="col-sm-8  px-3">
+        <header class="">
+          <h1 class="mb-3">Payment</h1>
+        </header>
+        <form>
+          <div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Credit card
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+              <label class="form-check-label" for="exampleRadios1">
+                Debit card
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+              <label class="form-check-label" for="exampleRadios1">
+                Paypal
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="nameOnCardFormControlInput">Name on card</label>
+            <input type="text" class="form-control" id="nameOnCardFormControlInput">
+            <p class="mb-0 text-muted">Full name as displayed on card</p>
+          </div>
+          <div class="form-group">
+            <label for="cardNumberFormControlInput">Credit card number</label>
+            <input type="text" class="form-control" id="cardNumberFormControlInput">
+          </div>
+
+          <div class="form-group">
+            <label for="expirationFormControlInput">Expiration</label>
+            <input type="text" class="form-control" id="expirationFormControlInput">
+          </div>
+
+          <div class="form-group">
+            <label for="cvvFormControlInput">CVV</label>
+            <input type="text" class="form-control" id="cvvFormControlInput">
+          </div>
+
+          <div class="border-top py-4 my-5">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Continue to checkout</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
   </div>
 </body>
 
