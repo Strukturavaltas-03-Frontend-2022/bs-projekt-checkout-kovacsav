@@ -78,7 +78,15 @@ const HunCounties = [
 const countrySelection = document.querySelector(".country-select");
 const territorySelection = document.querySelector(".territory-select");
 
+const emptyElement = (targetElement) => {
+  targetElement.innerHTML = "";
+  const optionElement = document.createElement("option");
+  optionElement.textContent = "Choose...";
+  targetElement.appendChild(optionElement);
+};
+
 const setSelectionOptions = (optionArray = [], targetElement) => {
+  emptyElement(targetElement);
   optionArray.forEach((item) => {
     const optionElement = document.createElement("option");
     optionElement.textContent = item;
@@ -86,12 +94,20 @@ const setSelectionOptions = (optionArray = [], targetElement) => {
   });
 };
 
-setSelectionOptions(countries, countrySelection);
+const selectCountryTerritories = (option) => {
+  if (option.value === "USA") {
+    setSelectionOptions(USAStates, territorySelection);
+  } else {
+    setSelectionOptions(HunCounties, territorySelection);
+  }
+};
 
-if (countrySelection.value === "USA") {
-  setSelectionOptions(USAStates, territorySelection);
-} else {
-  setSelectionOptions(HunCounties, territorySelection);
-}
+const main = () => {
+  setSelectionOptions(countries, countrySelection);
+  const optionElements = document.querySelectorAll("option");
+  optionElements.forEach((item) =>
+    item.addEventListener("click", () => selectCountryTerritories(item))
+  );
+};
 
-console.log(countrySelection.value);
+main();
