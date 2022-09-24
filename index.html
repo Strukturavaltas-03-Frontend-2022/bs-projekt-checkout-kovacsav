@@ -115,23 +115,27 @@
             <label for="addressFormControlInput2">Address 2 (Optional)</label>
             <input type="text" class="form-control" id="addressFormControlInput2" placeholder="Apartment or suite">
           </div>
-          <div class="form-group">
-            <label for="countryFormControlSelect">Country</label>
-            <select class="form-control country-select" id="countryFormControlSelect">
-              <option selected>Choose...</option>
-            </select>
+
+          <div class="row d-flex flex-sm-row">
+            <div class="form-group col-sm-5">
+              <label for="countryFormControlSelect">Country</label>
+              <select class="form-control country-select" id="countryFormControlSelect">
+                <option selected>Choose...</option>
+              </select>
+            </div>
+
+            <div class="form-group col-sm-5">
+              <label for="stateFormControlSelect">State</label>
+              <select class="form-control territory-select" id="stateFormControlSelect">
+                <option selected>Choose...</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="zipFormControlInput">Zip</label>
+              <input type="text" class="form-control" id="addressFormControlInput">
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="stateFormControlSelect">State</label>
-            <select class="form-control territory-select" id="stateFormControlSelect">
-              <option selected>Choose...</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="zipFormControlInput">Zip</label>
-            <input type="text" class="form-control" id="addressFormControlInput">
-          </div>
         </form>
       </div>
     </div>
@@ -187,24 +191,28 @@
             </div>
           </div>
 
-          <div class="form-group mt-3">
-            <label for="nameOnCardFormControlInput">Name on card</label>
-            <input type="text" class="form-control" id="nameOnCardFormControlInput">
-            <p class="mb-0 text-muted">Full name as displayed on card</p>
-          </div>
-          <div class="form-group">
-            <label for="cardNumberFormControlInput">Credit card number</label>
-            <input type="text" class="form-control" id="cardNumberFormControlInput">
-          </div>
-
-          <div class="form-group">
-            <label for="expirationFormControlInput">Expiration</label>
-            <input type="text" class="form-control" id="expirationFormControlInput">
+          <div class="row d-flex flex-sm-row">
+            <div class="form-group mt-3 col-sm-6">
+              <label for="nameOnCardFormControlInput">Name on card</label>
+              <input type="text" class="form-control" id="nameOnCardFormControlInput">
+              <p class="mb-0 text-muted">Full name as displayed on card</p>
+            </div>
+            <div class="form-group mt-3 col-sm-6">
+              <label for="cardNumberFormControlInput">Credit card number</label>
+              <input type="text" class="form-control" id="cardNumberFormControlInput">
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="cvvFormControlInput">CVV</label>
-            <input type="text" class="form-control" id="cvvFormControlInput">
+          <div class="row d-flex flex-sm-row">
+            <div class="form-group col-sm-3">
+              <label for="expirationFormControlInput">Expiration</label>
+              <input type="text" class="form-control" id="expirationFormControlInput">
+            </div>
+
+            <div class="form-group col-sm-3">
+              <label for="cvvFormControlInput">CVV</label>
+              <input type="text" class="form-control" id="cvvFormControlInput">
+            </div>
           </div>
 
           <div class="border-top py-4 my-5">
